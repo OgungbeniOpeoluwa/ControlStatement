@@ -1,4 +1,4 @@
-package chapter5;
+package makingADiffrence;
 
 import java.util.Scanner;
 
