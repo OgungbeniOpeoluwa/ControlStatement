@@ -28,14 +28,28 @@ public class ModifyStateFault {
     }
 
     public void setState(String state) {
-        this.state = state;
+        String CT = "Connecticut";
+        String MA = "Massachusetts";
+        String ME = "Maine" ;
+        String NH = "New Hampshire";
+        String NJ = "New Jersey";
+        String NY =  "New York";
+        String PA  = "Pennsylvania";
+        String VT = "Vermont";
+
+        if(state.equals("CT") || state.equals("MA")||state.equals("ME")|| state.equals("NH") || state.equals("NJ")||state.equals("NY")|| state.equals("PA") || state.equals("VT")){
+           this.state = state;
+        }
+        else{
+            System.out.println("Invalid input");
+        }
     }
 
     public String getState() {
         return state;
     }
 
-    boolean noFaultState() {
+    boolean isNoFaultState() {
         boolean noFaultState;
         switch (getState()) {
             case "MA":
